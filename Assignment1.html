@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment1</title>
+		<style>
+			
+		#div1{
+
+				width :100px;
+				background-color: lightblue;
+				color: yellow;
+				padding: 25px;
+				text-align: center;
+		}
+
+		</style>
+
+
+
+
+	
+</head>
+<body>
+	<div id="div1" >
+
+	Like
+	
+	</div>
+	
+
+</body>
+	<script>
+		
+		function fun1()
+
+		{
+
+				var a1 = document.getElementById("div1");
+
+				a1.onclick= function()
+
+				{
+				
+				if(a1.style.backgroundColor == "orange" && a1.innerHTML== "UnLike")
+					{
+					
+						a1.style.backgroundColor = "lightblue";
+						a1.innerHTML= "Like";
+					}
+				else 
+					{
+
+					a1.style.backgroundColor = "orange";
+					a1.innerHTML= "UnLike"
+					}
+				}
+
+		
+		}
+		fun1();
+		
+	</script>
+
+
+
+
+</html>
